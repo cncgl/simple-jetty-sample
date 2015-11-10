@@ -8,6 +8,10 @@ tasks.withType(JavaCompile) {
   options.encoding = 'UTF-8'
 }
 
+task wrapper(type: Wrapper) {
+  gradleVersion = '2.8'
+}
+
 repositories {
   jcenter()
 }
